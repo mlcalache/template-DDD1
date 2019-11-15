@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "335fbae9-0af7-44ad-a581-9b1a88c4f140",
+		"name": "Mirabeau",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "username=admin&password=123&grant_type=password"
+				},
+				"url": {
+					"raw": "http://localhost:56054/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56054",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET AIRPORTS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "QhcMjOOzOmEw-76V6Q3CQPKPmxaLUmOUZWr9EAtTfzIsQwbXFcGlgIQNgtDlgNPifTUCgpaFtwVLTyinUAMn27v3XWQ5F5yZnWpPzLi1MZJO0YP4bdPuUEPGvFZX9e-1-oHC82SkaZUilMP20kuIoqw_tltCffKhOFN1064bmRch9ADeSFapSDrOIfSfemXnqxEh-MtS-JdhOqyb33_nu4Btfe9EsawPsJZ30kaGIP2S3RZThUtsRPBNmGzaCSUkqg7KHZ-CHLaXHSbRPJLxnQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:56054/api/airport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56054",
+					"path": [
+						"api",
+						"airport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DISTANCE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "5p5P_kwO9lEaUyebZ2GkSlF6Z5HPgki2nH0PI-iAgIrxJDIKTurR2xO8jbWPhaNiIA6nb6cEADLbyZb4pmJ9gLH0QinOEBqiEn2IJ45lH_gmYbqaiU7FKoVmLNaBu1GMcXgFuJHBRosBe9K50CptRpgRpHdSsd9njJDs1BNKHXl-wYLGrvH9iW5LZNFMdyLdIneiq_4nmObJ4XhvOTlUH3ZfLyuCFCzjaQyEdym9GCpjHhCXlV6Qe7Cqr1UAU_9jQbnhz2YZl1H_tDuijp_E_Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:56054/api//Distance?iata1=HKV&iata2=JAM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56054",
+					"path": [
+						"api",
+						"",
+						"Distance"
+					],
+					"query": [
+						{
+							"key": "iata1",
+							"value": "HKV"
+						},
+						{
+							"key": "iata2",
+							"value": "JAM"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

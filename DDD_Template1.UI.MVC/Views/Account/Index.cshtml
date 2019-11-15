@@ -1,0 +1,52 @@
+﻿@model DDD_Template1.UI.MVC.Models.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Content/Bootstrap/js/bootstrap.min.js"></script>
+    <link href="~/Content/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/login.min.css" rel="stylesheet" />
+    <link href="~/Content/css/toastr.css" rel="stylesheet" />
+    <script src="~/Scripts/toastr.js"></script>
+    <link href="~/Content/Font-Awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+</head>
+
+<body class="text-center">
+
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-login" }))
+    {
+
+        @Html.AntiForgeryToken()
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>
+
+        <label for="inputEmail" class="sr-only">Username</label>
+        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", @placeholder = "Username", @required = true, @autofocus = true } })
+        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Password", @required = true, @type = "password" } })
+        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+            <span class="fa fa-sign-in-alt"></span> Sign in
+        </button>
+        <p class="mt-5 mb-3 text-muted">Matheus de Lara Calache &copy; 2018</p>
+    }
+
+
+    @Html.Partial("../Shared/_ToastrBuilder")
+</body>
+</html>

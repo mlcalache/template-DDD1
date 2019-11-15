@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B558ABB6-FCEA-4E31-9B39-9726ADB6437C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDD_Template1.Domain</RootNamespace>
+    <AssemblyName>DDD_Template1.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTOs\DistanceResultDTO.cs" />
+    <Compile Include="DTOs\AirportFilterDTO.cs" />
+    <Compile Include="Entities\Airport.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Enums\SizeEnum.cs" />
+    <Compile Include="Enums\TypeEnum.cs" />
+    <Compile Include="Enums\ContinentsEnum.cs" />
+    <Compile Include="Interfaces\Container\IDomainContainer.cs" />
+    <Compile Include="Interfaces\Notifications\IDomainNotificationHandler.cs" />
+    <Compile Include="Interfaces\Services\IAirportExhibitionService.cs" />
+    <Compile Include="Interfaces\Services\IAirportListService.cs" />
+    <Compile Include="Interfaces\Services\ILoginService.cs" />
+    <Compile Include="Notifications\DomainNotification.cs" />
+    <Compile Include="Notifications\DomainNotificationHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

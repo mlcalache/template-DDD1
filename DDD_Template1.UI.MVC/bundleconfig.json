@@ -1,0 +1,134 @@
+[
+  {
+    "outputFileName": "Content/Bootstrap/css/bootstrap-grid.min.css",
+    "inputFiles": [
+      "Content/Bootstrap/css/bootstrap-grid.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Bootstrap/css/bootstrap-reboot.min.css",
+    "inputFiles": [
+      "Content/Bootstrap/css/bootstrap-reboot.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Bootstrap/css/bootstrap.min.css",
+    "inputFiles": [
+      "Content/Bootstrap/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Bootstrap/js/bootstrap.bundle.min.min.js",
+    "inputFiles": [
+      "Content/Bootstrap/js/bootstrap.bundle.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Bootstrap/js/bootstrap.bundle.min.js",
+    "inputFiles": [
+      "Content/Bootstrap/js/bootstrap.bundle.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Bootstrap/js/bootstrap.min.js",
+    "inputFiles": [
+      "Content/Bootstrap/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/login.min.css",
+    "inputFiles": [
+      "Content/login.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/login.min.css",
+    "inputFiles": [
+      "Content/css/login.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Popper/popper.min.js",
+    "inputFiles": [
+      "Content/Popper/popper.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/app.min.css",
+    "inputFiles": [
+      "Content/css/app.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/toastr.min.css",
+    "inputFiles": [
+      "Content/css/toastr.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/toastr.min.js",
+    "inputFiles": [
+      "Scripts/toastr.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery-1.10.2.intellisense.min.js",
+    "inputFiles": [
+      "Scripts/jquery-1.10.2.intellisense.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery-1.10.2.min.js",
+    "inputFiles": [
+      "Scripts/jquery-1.10.2.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery.validate-vsdoc.min.js",
+    "inputFiles": [
+      "Scripts/jquery.validate-vsdoc.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery.validate.min.js",
+    "inputFiles": [
+      "Scripts/jquery.validate.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery.validate.unobtrusive.min.js",
+    "inputFiles": [
+      "Scripts/jquery.validate.unobtrusive.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Font-Awesome/css/fa-brands.min.css",
+    "inputFiles": [
+      "Content/Font-Awesome/css/fa-brands.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Font-Awesome/css/fa-regular.min.css",
+    "inputFiles": [
+      "Content/Font-Awesome/css/fa-regular.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Font-Awesome/css/fa-solid.min.css",
+    "inputFiles": [
+      "Content/Font-Awesome/css/fa-solid.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Font-Awesome/css/fontawesome-all.min.css",
+    "inputFiles": [
+      "Content/Font-Awesome/css/fontawesome-all.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Font-Awesome/css/fontawesome.min.css",
+    "inputFiles": [
+      "Content/Font-Awesome/css/fontawesome.css"
+    ]
+  }
+]

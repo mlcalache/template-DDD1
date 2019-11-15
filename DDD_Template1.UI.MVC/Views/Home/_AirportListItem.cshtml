@@ -1,0 +1,59 @@
+﻿@model IEnumerable<DDD_Template1.UI.MVC.Models.AirportViewModel>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Continent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IATA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ISO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Latitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Longitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-primary btn-sm btnShowDistanceFromAirport" data-toggle="modal" data-target="#modalDistance" id="btnShowDistanceFromAirport" airport="@item.IATA">
+                <span class="fa fa-calculator"></span> Calculate distance
+            </button>
+        </td>
+    </tr>
+}
+
+<script>
+
+    $(function () {
+        $(".btnShowDistanceFromAirport").on("click", function () {
+            var iataOrigin = $(this).attr("airport");
+            $("#txtAiportOrigin").val(iataOrigin);
+            $("#txtAiportOrigin").attr("disabled", "disabled");
+
+            ResetDistance();
+        });
+
+        $("#btnGetDistance").on("click", function () {
+            var iata1 = $("#txtAiportOrigin").val();
+            var iata2 = $("#txtAiportDestination").val();
+            getDistance(iata1, iata2);
+        });
+    });
+
+</script>
