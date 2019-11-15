@@ -50,23 +50,23 @@
     color: #919191;
 }
 
-    .intro .logo-mirabeau {
+    .intro .logo-company {
         width: 50vw;
         height: 11.6vw;
         margin-bottom: auto;
     }
 
-.logo-mirabeau {
+.logo-company {
     max-width: 233px;
     max-height: 54.056px;
     min-width: 100px;
     min-height: 23.2px;
-    background: url(../images/mirabeau-logo-transparent.svg) no-repeat left center;
+    background: url(../images/company-logo.png) no-repeat left center;
     background-size: contain;
     color: #FF0000;
     text-indent: -999rem;
 }
 
-.navbar-mirabeau {
+.navbar-template {
     padding: 1vh 4vw;
 }

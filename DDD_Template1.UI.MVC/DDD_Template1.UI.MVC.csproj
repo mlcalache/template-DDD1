@@ -190,6 +190,7 @@
     <Content Include="Content\Font-Awesome\webfonts\fa-brands-400.svg" />
     <Content Include="Content\Font-Awesome\webfonts\fa-regular-400.svg" />
     <Content Include="Content\Font-Awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\images\company-logo.png" />
     <Content Include="Content\images\csharp.jpg" />
     <Content Include="Content\Popper\popper.js" />
     <Content Include="Content\css\login.css" />
@@ -197,7 +198,6 @@
       <DependentUpon>login.css</DependentUpon>
     </Content>
     <Content Include="Content\images\loading.gif" />
-    <Content Include="Content\images\DDD_Template1-logo-transparent.svg" />
     <Content Include="Content\Popper\popper.min.js">
       <DependentUpon>popper.js</DependentUpon>
     </Content>
