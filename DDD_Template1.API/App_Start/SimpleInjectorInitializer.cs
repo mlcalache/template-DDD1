@@ -1,13 +1,13 @@
-﻿using Microsoft.Practices.ServiceLocation;
-using DDD_Template1.API.AutoMapper;
+﻿using DDD_Template1.API.AutoMapper;
 using DDD_Template1.Infra.CrossCutting.IoC;
+using Microsoft.Practices.ServiceLocation;
 using Owin;
 using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
 using SimpleInjector.Lifestyles;
 using System.Web.Http;
 
-namespace Gedof.API
+namespace DDD_Template1.API
 {
     public class SimpleInjectorInitializer
     {

@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B558ABB6-FCEA-4E31-9B39-9726ADB6437C}</ProjectGuid>
+    <ProjectGuid>{6C4CB79F-95D7-4990-A63E-4F93510C1653}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DDD_Template1.Domain</RootNamespace>
-    <AssemblyName>DDD_Template1.Domain</AssemblyName>
+    <RootNamespace>DDD_Template1.Infra.Data</RootNamespace>
+    <AssemblyName>DDD_Template1.Infra.Data</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,24 +32,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTOs\DistanceResultDTO.cs" />
-    <Compile Include="DTOs\AirportFilterDTO.cs" />
-    <Compile Include="Entities\Airport.cs" />
-    <Compile Include="Entities\User.cs" />
-    <Compile Include="Enums\SizeEnum.cs" />
-    <Compile Include="Enums\TypeEnum.cs" />
-    <Compile Include="Enums\ContinentsEnum.cs" />
-    <Compile Include="Interfaces\Container\IDomainContainer.cs" />
-    <Compile Include="Interfaces\Notifications\IDomainNotificationHandler.cs" />
-    <Compile Include="Interfaces\Repositories\IRepository.cs" />
-    <Compile Include="Interfaces\Services\IAirportExhibitionService.cs" />
-    <Compile Include="Interfaces\Services\IAirportListService.cs" />
-    <Compile Include="Interfaces\Services\ILoginService.cs" />
-    <Compile Include="Notifications\DomainNotification.cs" />
-    <Compile Include="Notifications\DomainNotificationHandler.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DDD_Template1.Domain\DDD_Template1.Domain.csproj">
+      <Project>{b558abb6-fcea-4e31-9b39-9726adb6437c}</Project>
+      <Name>DDD_Template1.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DDD_Template1.Infra.CrossCutting.Helpers\DDD_Template1.Infra.CrossCutting.Helpers.csproj">
+      <Project>{d8d20ce9-67ed-4a8b-a9af-c5e5caeaac91}</Project>
+      <Name>DDD_Template1.Infra.CrossCutting.Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

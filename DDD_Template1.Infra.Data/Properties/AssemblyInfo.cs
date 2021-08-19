@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DDD_Template1.Infra.ExternalService.AirportList")]
+[assembly: AssemblyTitle("DDD_Template1.Infra.Data")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DDD_Template1.Infra.ExternalService.AirportList")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyProduct("DDD_Template1.Infra.Data")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e2ca5075-4d21-461c-85fa-18c48db3ec3e")]
+[assembly: Guid("6c4cb79f-95d7-4990-a63e-4f93510c1653")]
 
 // Version information for an assembly consists of the following four values:
 //

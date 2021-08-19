@@ -1,5 +1,4 @@
-﻿using Gedof.API;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace DDD_Template1.API
 {

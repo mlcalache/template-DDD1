@@ -1,7 +1,6 @@
-﻿using Gedof.API;
-using Microsoft.Owin.Security.OAuth;
+﻿using DDD_Template1.API.Providers;
 using DDD_Template1.Infra.CrossCutting.Helpers;
-using Mirabeu.API.Providers;
+using Microsoft.Owin.Security.OAuth;
 using Owin;
 using System;
 

@@ -1,7 +1,7 @@
 ﻿using DDD_Template1.API.Filters;
 using System.Web.Http.Filters;
 
-namespace Gedof.API
+namespace DDD_Template1.API
 {
     public class FilterConfig
     {

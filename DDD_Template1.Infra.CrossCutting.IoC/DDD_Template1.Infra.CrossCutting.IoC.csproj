@@ -65,7 +65,7 @@
     </ProjectReference>
     <ProjectReference Include="..\DDD_Template1.Infra.ExternalService.AirportList\DDD_Template1.Infra.ExternalService.AirportList.csproj">
       <Project>{E2CA5075-4D21-461C-85FA-18C48DB3EC3E}</Project>
-      <Name>DDD_Template1.Infra.Service.AirportList</Name>
+      <Name>DDD_Template1.Infra.ExternalService.AirportList</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
